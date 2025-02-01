@@ -3,17 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Average Stock Price Calculator</title>
+  <meta name="description" content="Calculate the average stock price of your investments with this easy-to-use Average Stock Price Calculator. Perfect for investors and traders to track their portfolio performance.">
+  <meta name="keywords" content="average stock price calculator, stock calculator, investment calculator, portfolio tracker, stock price tracker">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="Average Stock Price Calculator">
+  <meta property="og:description" content="Calculate the average stock price of your investments with this easy-to-use tool. Perfect for investors and traders.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://spiritstack.github.io/Free-Average-Stock-Price-Calculator/">
+  <meta property="og:image" content="https://spiritstack.github.io/Free-Average-Stock-Price-Calculator/image.png">
+  <title>Average Stock Price Calculator - Track Your Investments Easily</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="container">
     <header class="header">
       <h1>Average Stock Price Calculator</h1>
-      <p>Enter your stock purchases to calculate the average price.</p>
+      <p>Track your investments and calculate the average stock price of your portfolio with this easy-to-use tool.</p>
     </header>
     <main class="main">
-      <div class="input-section">
+      <section class="intro">
+        <h2>Why Use an Average Stock Price Calculator?</h2>
+        <p>
+          Calculating the average stock price is essential for investors to understand their portfolio performance. 
+          Whether you're buying shares at different prices or tracking your investments over time, this tool helps you 
+          determine the average price you've paid per share. It's perfect for both beginners and experienced traders.
+        </p>
+      </section>
+      <section class="input-section">
+        <h2>Calculate Your Average Stock Price</h2>
         <div class="input-group">
           <label for="quantity">Quantity:</label>
           <input type="number" id="quantity" placeholder="Quantity" min="1" autocomplete="off">
@@ -24,18 +41,45 @@
         </div>
         <button id="add-transaction">Add</button>
         <button id="reset-transactions">Reset</button>
-      </div>
-      <div class="transactions-section">
+      </section>
+      <section class="transactions-section">
         <h2>Your Transactions</h2>
         <ul id="transactions-list">
           <li class="empty-state">No transactions added yet.</li>
         </ul>
-      </div>
-      <div class="result-section">
+      </section>
+      <section class="result-section">
         <h2>Average Stock Price</h2>
         <p id="average-price">0.00</p>
-      </div>
+      </section>
+      <section class="faq">
+        <h2>Frequently Asked Questions</h2>
+        <div class="faq-item">
+          <h3>What is an average stock price?</h3>
+          <p>
+            The average stock price is the mean price you've paid for all the shares of a particular stock in your portfolio. 
+            It helps you understand your investment performance and make informed decisions.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>How is the average stock price calculated?</h3>
+          <p>
+            The average stock price is calculated by dividing the total cost of all shares by the total number of shares purchased. 
+            This tool automates the calculation for you.
+          </p>
+        </div>
+        <div class="faq-item">
+          <h3>Can I use this tool for multiple stocks?</h3>
+          <p>
+            Yes, you can use this tool to calculate the average price for multiple stocks. Simply reset the calculator after 
+            calculating the average for one stock and start over for the next.
+          </p>
+        </div>
+      </section>
     </main>
+    <footer class="footer">
+      <p>&copy; 2023 Average Stock Price Calculator. All rights reserved.</p>
+    </footer>
   </div>
   <script src="script.js"></script>
 </body>
