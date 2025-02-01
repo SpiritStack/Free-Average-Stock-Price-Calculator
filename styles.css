@@ -198,3 +198,45 @@ body {
     font-size: 1.5rem;
   }
 }
+
+/* FAQ Section */
+.faq {
+  margin-top: 30px;
+}
+
+.faq h2 {
+  font-size: 1.8rem;
+  color: #2c3e50;
+  margin-bottom: 15px;
+}
+
+.faq-item {
+  margin-bottom: 20px;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.faq-item p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 8px;
+}
+
+.footer p {
+  margin: 0;
+  font-size: 0.9rem;
+}
