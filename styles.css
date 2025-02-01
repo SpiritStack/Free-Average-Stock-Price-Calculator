@@ -1,0 +1,88 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.header {
+  background-color: #6200ea;
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.main {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.input-section {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.input-section input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.input-section button {
+  padding: 10px;
+  background-color: #6200ea;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.input-section button:hover {
+  background-color: #3700b3;
+}
+
+.transactions-section {
+  margin-bottom: 20px;
+}
+
+.transactions-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.transactions-section li {
+  background-color: #f4f4f9;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 5px;
+}
+
+.result-section {
+  background-color: #f4f4f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.result-section h2 {
+  margin-bottom: 10px;
+}
+
+.result-section p {
+  font-size: 24px;
+  font-weight: bold;
+  color: #6200ea;
+}
