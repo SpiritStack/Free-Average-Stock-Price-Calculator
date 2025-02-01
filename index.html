@@ -77,8 +77,11 @@
         </div>
       </section>
     </main>
+    <script>
+        document.querySelectorAll("time").forEach(el => el.textContent = new Date().getFullYear());
+    </script>
     <footer class="footer">
-      <p>&copy; 2023 Average Stock Price Calculator. All rights reserved.</p>
+      <p>&copy; <time id="footer-year"></time> Average Stock Price Calculator. All rights reserved.</p>
     </footer>
   </div>
   <script src="script.js"></script>
