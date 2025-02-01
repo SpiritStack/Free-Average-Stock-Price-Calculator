@@ -1,15 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Average Stock Price Calculator</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <div id="root"></div>
-    <script src="app.js"></script>
-    <script src="https://unpkg.com/react@17/umd/react.development.js" crossorigin></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.development.js" crossorigin></script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Average Stock Price Calculator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>Average Stock Price Calculator</h1>
+      <p>Enter your stock purchases to calculate the average price.</p>
+    </header>
+    <main class="main">
+      <div class="input-section">
+        <input type="number" id="quantity" placeholder="Quantity" min="1">
+        <input type="number" id="price" placeholder="Price per share" min="0.01" step="0.01">
+        <button id="add-transaction">Add</button>
+        <button id="reset-transactions">Reset</button>
+      </div>
+      <div class="transactions-section">
+        <h2>Your Transactions</h2>
+        <ul id="transactions-list">
+          <li class="empty-state">No transactions added yet.</li>
+        </ul>
+      </div>
+      <div class="result-section">
+        <h2>Average Stock Price</h2>
+        <p id="average-price">0.00</p>
+      </div>
+    </main>
+  </div>
+  <script src="script.js"></script>
+</body>
 </html>
