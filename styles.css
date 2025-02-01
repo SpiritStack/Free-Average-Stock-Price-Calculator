@@ -35,20 +35,32 @@ body {
   gap: 10px;
   margin-bottom: 30px;
   flex-wrap: wrap;
+  align-items: flex-end;
 }
 
-.input-section input {
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  flex: 1;
+  min-width: 150px;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.input-group input {
   padding: 8px;
   border: 1px solid #ddd;
   border-radius: 6px;
   font-size: 0.9rem;
   outline: none;
   transition: border-color 0.3s ease;
-  flex: 1;
-  min-width: 120px;
 }
 
-.input-section input:focus {
+.input-group input:focus {
   border-color: #6200ea;
 }
 
@@ -140,9 +152,16 @@ body {
     font-size: 1rem;
   }
 
-  .input-section input,
+  .input-section {
+    flex-direction: column;
+  }
+
+  .input-group {
+    width: 100%;
+  }
+
   .input-section button {
-    font-size: 0.8rem;
+    width: 100%;
   }
 
   .transactions-section h2,
